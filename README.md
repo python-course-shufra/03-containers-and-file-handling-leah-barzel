@@ -28,3 +28,23 @@ question ; answer ; option1, option2, option3
 יש לממש את הקוד לשאלה זו בקובץ [quiz_app.py](./quiz_app.py).
 
 לאחר המימוש עליך להכנס ל[quiz_app_test.py](./quiz_app_test.py) ולשנות את הערך של המשתנה `is_implemented` ל`True`.
+
+def print_details(lst):
+    for _ in range(len(lst)):
+        print(f"{lst[_]['name']}\n")
+
+print_details(classroom)
+
+   
+    
+
+
+def delete_student(name):
+    i=re_index(classroom, name)
+    classroom[i] = ""
+
+delete_student('Charlie')
+print_details(classroom)
+   # """Delete a student from the classroom"""
+ #   pass
+
