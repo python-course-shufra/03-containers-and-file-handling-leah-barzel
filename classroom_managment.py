@@ -104,9 +104,11 @@ def get_professions(name):
     sub = set()
     i = re_index(classroom,name)
     grade=classroom[i]['grades']
-    if grade is not None:
-        for s,_ in grade:
-            sub.add(s)
+    ###if grade is not None:
+    for s,_ in grade:
+        sub.add(s)
+    return sub
+        
 
 get_professions("Bob")
 
